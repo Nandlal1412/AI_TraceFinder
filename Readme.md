@@ -1,11 +1,19 @@
-#  AI TraceFinder — Forensic Scanner Identification  
+#  🕵️‍♂️ AI TraceFinder — Forensic Scanner Identification  
 
-##  Overview  
-AI TraceFinder is a forensic machine learning platform that identifies the **source scanner device** used to digitize a document or image. Each scanner (brand/model) introduces unique **noise, texture, and compression artifacts** that serve as a fingerprint. By analyzing these patterns, AI TraceFinder enables **fraud detection, authentication, and forensic validation** in scanned documents.  
+##  🧠 Project Overview  
+Scanned documents—such as legal contracts, certificates, and financial records—are vulnerable to forgery. It’s often impossible to determine whether a scanned image is authentic or if it was created using an unauthorized device.
+
+**AI TraceFinder** solves this challenge by identifying the **source scanner** used to digitize a document. Every scanner model introduces subtle, unique digital fingerprints—microscopic noise patterns, texture artifacts, and compression traces—based on its hardware and firmware. These invisible signatures can be used to:
+- ✅ Attribute a scanned document to a specific scanner model
+- 🚫 Detect forgeries created using unauthorized devices
+- 🧾 Verify the authenticity of scanned evidence in forensic and legal contexts
+  
+Built as a forensic machine learning platform, AI TraceFinder extracts scanner-specific features and applies classification models to deliver **accurate, interpretable, and legally actionable results.** Whether for fraud detection, source attribution, or tamper validation, this tool empowers investigators with digital proof of origin.
+  
 
 ---
 
-##  Goals & Objectives  
+##  🎯 Goals & Objectives  
 - Collect and label scanned document datasets from multiple scanners  
 - Robust preprocessing (resize, grayscale, normalize, denoise)  
 - Extract scanner-specific features (noise, FFT, PRNU, texture descriptors)  
@@ -16,7 +24,7 @@ AI TraceFinder is a forensic machine learning platform that identifies the **sou
 
 ---
 
-##  Methodology 
+##  🧪 Methodology 
 1. **Data Collection & Labeling**  
    - Gather scans from 3–5 scanner models/brands  
    - Create a structured, labeled dataset  
@@ -42,7 +50,7 @@ AI TraceFinder is a forensic machine learning platform that identifies the **sou
 
 ---
 
-##  Actionable Insights for Forensics  
+##  🕵️ Actionable Insights for Forensics  
 - **Source Attribution:** Identify which scanner created a scanned copy of a document.  
 - **Fraud Detection:** Detect forgeries where unauthorized scanners were used.  
 - **Legal Verification:** Validate whether scanned evidence originated from approved devices.  
@@ -51,8 +59,51 @@ AI TraceFinder is a forensic machine learning platform that identifies the **sou
 
 ---
 
-##  Architecture (Conceptual)  
+##  🧱 Architecture (Conceptual)  
 Input ➜ Preprocessing ➜ Feature Extraction + Modeling ➜ Evaluation & Explainability ➜ Prediction App  
+
+---
+## ✨ Key Capabilities
+- **🔍 Flexible Feature Extraction:** Use the built-in Streamlit interface to process image folders, extract over 10 scanner-specific attributes, and automatically generate a structured CSV file.
+- **📈 Interactive Data Insights:** Explore visual summaries including class balance charts, representative samples per scanner type, and a complete dataset preview.
+- **📥 Exportable Analysis:** Instantly download the full feature dataset for offline modeling or archival purposes.
+- **🧪 End-to-End ML Workflow:**
+- **Model Training:** Train Random Forest and SVM classifiers directly from the extracted features.
+- **Performance Review:** Access detailed metrics like precision, recall, and confusion matrices to evaluate model accuracy.
+- **Real-Time Prediction:** Upload any scanned image to identify its originating scanner with confidence.
+- **🔄 Model Selection Flexibility:** Toggle between SVM and Random Forest classifiers for prediction based on your use case.
+- **🧠 Deep Learning Integration:** Leverage a convolutional neural network (CNN) for direct image-based classification, bypassing manual feature engineering.
+
+---
+## 🏠 Home Page :
+
+![Home Page](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Home%20Page.png)
+
+---
+## 🧩 Feature Extraction:
+
+![Feature Extraction](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Feature%20Extraction.png)
+
+---
+## 🎨 Feature Visualization:
+
+![Feature Visualization](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Feature%20Visualization%201.png)
+
+---
+## 🗂️ Dataset Overview:
+
+![Dataset Overview](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Dataset%20Overview.png)
+
+---
+## 🧠 Model Training & Evaluation:
+
+![Model Traning & Evaluation](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Model%20Traning%20%26%20Evaluation.png)
+
+---
+## 🔍 Live Prediction:
+
+![Live Prediction](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Live%20Prediction.png)
+
 
 ---
 
@@ -68,7 +119,7 @@ Input ➜ Preprocessing ➜ Feature Extraction + Modeling ➜ Evaluation & Expla
 
 ---
 
-##  Suggested Project Structure  
+##  🗂️ Suggested Project Structure  
 ```bash
 ai-tracefinder/
 ├─ app.py              
