@@ -1,7 +1,3 @@
 venv/
 datasets/
 .ipynb_checkpoints/
-tmp_test_img/
-temp_image.tif
-processed_data/new_processed/official_images.npy
-Residuals_Paths/official_wiki_residuals.pkl
