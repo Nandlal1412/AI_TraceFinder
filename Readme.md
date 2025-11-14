@@ -24,6 +24,27 @@ Built as a forensic machine learning platform, AI TraceFinder extracts scanner-s
 
 ---
 
+## 🛠 Tech Stack
+
+This project leverages a modern stack for machine learning, image processing, and web application delivery.
+
+| Category | Technology | Purpose |
+|-----------|-------------|----------|
+| **Backend & ML** | **Python** | Core programming language |
+| | **Scikit-learn** | Random Forest & SVM (Baseline Models) |
+| | **Pandas** | Data manipulation and CSV handling |
+| | **OpenCV** | Image processing (loading, color conversion, etc.) |
+| | **NumPy** | Numerical operations |
+| | **TensorFlow / Keras** | For CNN Model |
+| **Frontend & UI** | **Streamlit** | Creating the interactive web application |
+| | **Matplotlib & Seaborn** | Data visualization (confusion matrix, plots) |
+| | **Pillow (PIL)** | Displaying sample images in the UI |
+| **Tooling** | **Git & GitHub** | Version control and source management |
+| | **venv** | Python virtual environment management |
+
+
+---
+
 ##  🧪 Methodology 
 1. **Data Collection & Labeling**  
    - Gather scans from 3–5 scanner models/brands  
@@ -77,32 +98,49 @@ Input ➜ Preprocessing ➜ Feature Extraction + Modeling ➜ Evaluation & Expla
 ---
 ## 🏠 Home Page :
 
-![Home Page](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Home%20Page.png)
+![Home Page](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Home.png)
 
----
-## 🧩 Feature Extraction:
-
-![Feature Extraction](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Feature%20Extraction.png)
-
----
-## 🎨 Feature Visualization:
-
-![Feature Visualization](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Feature%20Visualization%201.png)
 
 ---
 ## 🗂️ Dataset Overview:
 
-![Dataset Overview](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Dataset%20Overview.png)
+![Dataset Overview](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Dataset%20Overview.png)
+
+---
+## 🎨 Feature Visualization:
+
+![Feature Visualization](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Feature%20Visualization.png)
+
+---
+## 📊 EDA
+
+![EDA](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/EDA.png)
+
+---
+
+## 🧩 Feature Extraction:
+
+![Feature Extraction](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Feature%20Extraction.png)
 
 ---
 ## 🧠 Model Training & Evaluation:
 
-![Model Traning & Evaluation](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Model%20Traning%20%26%20Evaluation.png)
+![Model Traning & Evaluation](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Model%20Training%20%26%20Evaluation.png)
 
 ---
 ## 🔍 Live Prediction:
 
-![Live Prediction](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/Data%20Visualization/Live%20Prediction.png)
+![Live Prediction](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Live%20Prediction.png)
+
+---
+## 🚨 Forgery / Tampered Detection
+![Forgery / Tampered Detection](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/Forgery_Tampered%20Detection.png)
+
+---
+
+## 🧑‍💻 About
+
+![About](https://github.com/Nandlal1412/AI_TraceFinder/blob/main/interface_walkthrough/About.png)
 
 
 ---
@@ -119,19 +157,4 @@ Input ➜ Preprocessing ➜ Feature Extraction + Modeling ➜ Evaluation & Expla
 
 ---
 
-##  🗂️ Suggested Project Structure  
-```bash
-ai-tracefinder/
-├─ app.py              
-├─ src/
-│  ├─ ingest/           
-│  ├─ preprocess/        
-│  ├─ features/          
-│  ├─ models/            
-│  ├─ explain/           
-│  └─ utils/             
-├─ data/                 
-├─ notebooks/            
-├─ reports/              
-└─ README.md
-```
+
