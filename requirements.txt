@@ -67,3 +67,5 @@ tzdata==2025.2
 urllib3==2.5.0
 watchdog==6.0.0
 tabulate>=0.8.9
+tensorflow-cpu==2.12.0
+
