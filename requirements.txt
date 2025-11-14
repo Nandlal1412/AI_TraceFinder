@@ -4,7 +4,11 @@ pandas==2.3.2
 matplotlib==3.10.6
 scipy==1.15.3
 pillow==11.3.0
+
+# OpenCV (headless only — prevents libGL errors)
 opencv-python-headless==4.12.0.88
+
+# Visualization & ML
 seaborn==0.13.2
 plotly==5.24.1
 scikit-learn==1.7.2
@@ -13,10 +17,10 @@ PyWavelets==1.8.0
 tqdm==4.66.4
 PyMuPDF==1.24.9
 
-# TensorFlow (Streamlit Cloud compatible CPU version)
+# TensorFlow (Cloud-compatible CPU version)
 tensorflow-cpu==2.12.0
 
-# Other required libs
+# Additional libraries
 altair==5.5.0
 attrs==25.3.0
 blinker==1.9.0
