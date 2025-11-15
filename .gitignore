@@ -4,3 +4,4 @@ __pycache__/
 datasets/*
 !datasets/flatfield_residuals.pkl
 !datasets/official.csv
+!datasets/official_wiki_residuals.pkl
