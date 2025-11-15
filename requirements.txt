@@ -14,7 +14,7 @@ tqdm==4.66.4
 PyMuPDF==1.24.9
 
 # TensorFlow (works with Python 3.11)
-tensorflow-cpu==2.15.0
+tensorflow==2.20.0
 
 # Other required libs
 altair==5.5.0
