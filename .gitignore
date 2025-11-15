@@ -1,7 +1,7 @@
 venv/
+__pycache__/
+*.pyc
 datasets/*
-
-# Allow these specific files inside datasets/
 !datasets/flatfield_residuals.pkl
 !datasets/official.csv
 !datasets/official_wiki_residuals.pkl
