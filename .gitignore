@@ -1,2 +1,10 @@
 venv/
 datasets/
+# Old (too broad)
+Datasets/
+
+# New (excludes everything in Datasets except specific files)
+Datasets/*
+!Datasets/flatfield_residuals.pkl
+!Datasets/official.csv
+!Datasets/official_wiki_residuals.pkl
